@@ -21,7 +21,7 @@ export default function AppRoutes () {
             <Alert />
             {firebase.isOpenModal && <Modal />}
             <Routes>
-                <Route exact path={routes.home.href} element={<Home />}/>
+                <Route path={routes.home.href} element={<Home />}/>
                 <Route exact path={routes.completedNotes.href} element={<CompletedNotes />}/>
                 <Route path={'*'} element={<Page404 />}/>
             </Routes>
